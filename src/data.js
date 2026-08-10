@@ -170,7 +170,7 @@ He understands that children may sometimes feel nervous about visiting the denti
   },
   "footer": {
     "leftSection": {
-      "logo": "/images/logo.png"
+      "logo": "/images/Logo.png"
     },
     "rightSection": {
       "text": "Follow us in.",
