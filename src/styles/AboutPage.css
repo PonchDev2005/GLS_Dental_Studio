@@ -1,0 +1,178 @@
+.AboutPage {
+    padding-top: 2.25rem;
+}
+
+.AboutPage .intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 93vh;
+}
+
+.AboutPage .intro .left {
+    width: 50%;
+    height: 100%;
+}
+
+.AboutPage .intro .left video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.AboutPage .intro .right {
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.AboutPage .intro .right h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.AboutPageDoctors {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.about-doc {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-doc:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.about-doc.doc0 {
+    background-color: #e3f2fd; 
+    border-left: 5px solid #2196f3; 
+}
+
+.about-doc.doc1 {
+    background-color: #e8f5e9; 
+    border-left: 5px solid #4caf50; 
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.about-doc .left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-doc .left img {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+}
+
+.about-doc .right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-doc .right h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.about-doc .right p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+@media (max-width: 950px){
+    .AboutPage .intro .right h1{
+        font-size: 2rem;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .AboutPage .intro {
+        flex-direction: column; 
+        height: auto;
+    }
+
+    .AboutPage .intro .left {
+        width: 100%;
+        height: auto; 
+    }
+
+    .AboutPage .intro .left video {
+        width: 100%; 
+        height: auto; 
+        object-fit: contain; 
+    }
+
+    .AboutPage .intro .right {
+        width: 90%; 
+        text-align: center; 
+        padding: 1rem; 
+        margin: 1rem auto; 
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 10px; 
+    }
+
+    .AboutPage .intro .right h1 {
+        font-size: 1.8rem; 
+    }
+
+    .about-doc {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-doc .left img {
+        width: 150px; 
+        height: 150px; 
+    }
+
+    .about-doc .right h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-doc .right p {
+        font-size: 0.9rem;
+    }
+
+    .about-doc.doc1, .about-doc.doc3{
+        flex-direction: column;
+    }
+}
+
+
+
+@media (max-width: 400px){
+    .AboutPage .intro .right h1{
+        font-size: 1.5rem;
+    }
+
+}
+

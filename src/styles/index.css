@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import './Header.css';
+@import './HomePage.css';
+@import './AboutPage.css';
+@import './Footer.css';
+@import './NotFound.css';
+@import './ContactPage.css';
+@import './ServicesPage.css';
+
+:root{
+    --orange:#0088ff;
+  }
+  
+  *{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: all .2s linear;
+    font-family: "Inter", serif;
+  }
+  
+  *::selection{
+    background:var(--orange);
+    color:#fff;
+  }
+  
+  
+  html::-webkit-scrollbar{
+    width:1rem;
+  }
+  
+  html::-webkit-scrollbar-track{
+    background:#918e8e;
+  }
+  
+  html::-webkit-scrollbar-thumb{
+    background:rgb(1, 141, 192);
+    border-radius: 50px;
+  }
+  
+  
+  html{
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+
+
+ 

@@ -1,0 +1,310 @@
+.ServicePage {
+    overflow-x: hidden; 
+    padding-top: 2.5rem;
+    background-color: rgb(27, 124, 181);
+  }
+
+/* intro_start_here */
+
+  .ServicePage .intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 96vh;
+  }
+  
+  .ServicePage .intro .left, 
+  .ServicePage .intro .right {
+    width: 50%;
+  }
+
+  .ServicePage .intro .left{
+
+    height: 100%;
+  }
+  
+  .ServicePage .intro .left video {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    display: block;
+  }
+  
+  .ServicePage .intro .right h1 {
+    font-size: 3rem;
+    line-height: 1.3;
+    color: #ffffff;
+    text-align: center; 
+    /* margin: 0; */
+  }
+
+/* intro ends here */
+
+/* kids_price_start_here */
+
+.ServicesPageKidsPrice {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .kids_background_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
+    z-index: 0;
+  }
+  
+  .ServicesPageKidsPrice h1 {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); 
+    margin-top: 5rem;
+  }
+  
+  .image_box {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: flex-end; 
+    padding-right: 2rem;
+  }
+  
+  .image_box img {
+    height: 85%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+  
+/* kids_price_ends_here */
+
+
+/* adult_price_start_here */
+
+.ServicesPageAdultPrice {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: flex-start;   
+  align-items: center;
+  overflow: hidden;
+}
+
+.adult_background_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.image_box2 {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: flex-start;  
+  padding-left: 2rem
+}
+
+.image_box2 img {
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* adult_price_ends_here */
+
+
+
+
+
+
+  /* --- Ադապտացիա --- */
+
+
+
+  @media (max-width: 1200px) {
+
+    .ServicePage .intro{
+      height: 80vh;
+    }
+    .ServicePage .intro .right h1 {
+      font-size: 2.5rem;
+    }
+    
+    .ServicePage .intro {
+      gap: 80px;
+
+    }
+
+    .image_box img,
+  .image_box2 img {
+    max-width: 450px;
+  }
+  }
+
+  @media (max-width: 1024px) {
+    .image_box img,
+    .image_box2 img {
+      max-width: 320px;
+    }
+
+
+    .ServicesPageKidsPrice h1 {
+      margin-top: 1rem;
+    }
+
+      
+  .image_box img {
+    height: 90%;
+  }
+    
+  }
+
+  @media (max-width: 880px){
+    .ServicePage .intro{
+      height: 60vh;
+    }
+  }
+
+  
+  @media (max-width: 768px) {
+    .ServicePage .intro {
+      flex-direction: row; 
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+    }
+  
+    .ServicePage .intro .left, 
+    .ServicePage .intro .right {
+      flex: 1; 
+    }
+
+    .ServicePage .intro .right h1 {
+      font-size: 2.5rem;
+    }
+    .ServicesPageKidsPrice {
+      min-height: 60vh;
+      padding: 30px 5%;
+    }
+
+    .ServicesPageAdultPrice {
+      height: auto;
+      padding: 30px 5%;
+    }
+
+    .ServicesPageKidsPrice h1 {
+      margin-bottom: 1rem;
+  }
+
+   
+  .ServicePage .intro .left video {
+   margin-top: 5rem;
+  }
+
+  }
+
+  @media (max-width: 650px){
+    .ServicePage .intro{
+      flex-direction: column;
+      height: auto;
+    }
+
+    .ServicePage .intro .right h1 {
+      font-size: 2rem;
+      padding-bottom: 2rem;
+    }
+
+  }
+
+  @media (max-width: 500px){
+    .image_box {
+      justify-content: center; 
+      padding: 0;
+    }
+    .ServicesPageKidsPrice h1 {
+      margin-top: 0;
+      font-size: 2rem;
+  }
+
+  .image_box2 {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0;
+}
+  }
+
+  @media (max-width: 370px) {
+    
+    .ServicePage .intro .right h1 {
+      font-size: 1.4rem; 
+    }
+    
+    .ServicePage .intro {
+      gap: 16px;
+    }
+
+    .ServicesPageKidsPrice {
+      padding: 20px 10px;
+    }
+  
+    .ServicesPageKidsPrice h1 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+  
+    .image_box img {
+      max-width: 95%; 
+    }
+  
+    .kids_background_image {
+      object-position: 70% center; 
+    }
+
+
+    .ServicesPageAdultPrice {
+      padding: 20px 10px;
+      justify-content: center;
+    }
+  
+    .image_box2 {
+      justify-content: center;
+    }
+  
+    .image_box2 img {
+      max-width: 95%;
+    }
+  
+    .adult_background_image {
+      object-position: 30% center;
+    }
+  }
+
+
+  
